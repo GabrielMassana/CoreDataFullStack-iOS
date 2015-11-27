@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <CoreData/CoreData.h>
+
 @protocol CDMCoreDataManagerDelegate <NSObject>
 
 - (NSString *)coredataModelName;

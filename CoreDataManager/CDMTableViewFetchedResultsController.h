@@ -8,6 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
+#import <UIKit/UIKit.h>
 
 @protocol CDMTableViewFetchedResultsControllerDelegate <NSObject>
 
