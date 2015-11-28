@@ -29,6 +29,7 @@
 		7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCoreDataManager.m; sourceTree = "<group>"; };
 		7A98DCBD1C090D1F008045EB /* CDMTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMTableViewFetchedResultsController.h; sourceTree = "<group>"; };
 		7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMTableViewFetchedResultsController.m; sourceTree = "<group>"; };
+		7AAD3FD21C09BE70009617BB /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 				7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */,
 				7A98DCBD1C090D1F008045EB /* CDMTableViewFetchedResultsController.h */,
 				7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */,
+				7AAD3FD21C09BE70009617BB /* CoreDataManager.h */,
 			);
 			path = CoreDataManager;
 			sourceTree = "<group>";
