@@ -46,7 +46,7 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
 {
     if (!_managedObjectModel)
     {
-        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:[self.delegate coredataModelName]
+        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:[self.delegate coreDataModelName]
                                                   withExtension:@"momd"];
         
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];

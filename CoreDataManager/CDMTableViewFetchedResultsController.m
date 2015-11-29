@@ -8,7 +8,6 @@
 
 #import "CDMTableViewFetchedResultsController.h"
 
-
 @interface CDMTableViewFetchedResultsController () <NSFetchedResultsControllerDelegate>
 
 @end
@@ -71,8 +70,6 @@
         {
             [self.frcDelegate willUpdateCellAtIndexPath:indexPath];
             
-//            [self.tableView reloadRowsAtIndexPaths:@[indexPath]
-//                                  withRowAnimation:self.updateRowAnimation];
             break;
         }
         case NSFetchedResultsChangeMove:

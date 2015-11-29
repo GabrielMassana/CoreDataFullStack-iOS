@@ -12,7 +12,7 @@
 
 @protocol CDMCoreDataManagerDelegate <NSObject>
 
-- (NSString *)coredataModelName;
+- (NSString *)coreDataModelName;
 
 @end
 
