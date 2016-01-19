@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreDataManager"
-  s.version      = "1.0.0"
+  s.version      = "1.0.4"
   s.summary      = "A static library project that simplifies Core Data."
 
   s.homepage     = "https://github.com/GabrielMassana"
