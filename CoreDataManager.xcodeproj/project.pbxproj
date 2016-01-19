@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A14ACEC1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14ACEB1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m */; };
 		7A98DCBF1C090D1F008045EB /* CDMCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */; };
 		7A98DCC01C090D1F008045EB /* CDMTableViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A14ACEA1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMCollectionViewFetchedResultsController.h; sourceTree = "<group>"; };
+		7A14ACEB1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCollectionViewFetchedResultsController.m; sourceTree = "<group>"; };
 		7A98DC611C0909C2008045EB /* libCoreDataManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreDataManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A98DCBB1C090D1F008045EB /* CDMCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMCoreDataManager.h; sourceTree = "<group>"; };
 		7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCoreDataManager.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */,
 				7A98DCBD1C090D1F008045EB /* CDMTableViewFetchedResultsController.h */,
 				7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */,
+				7A14ACEA1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.h */,
+				7A14ACEB1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m */,
 				7AAD3FD21C09BE70009617BB /* CoreDataManager.h */,
 			);
 			path = CoreDataManager;
@@ -129,6 +134,7 @@
 			files = (
 				7A98DCBF1C090D1F008045EB /* CDMCoreDataManager.m in Sources */,
 				7A98DCC01C090D1F008045EB /* CDMTableViewFetchedResultsController.m in Sources */,
+				7A14ACEC1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
