@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A14ACEC1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14ACEB1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m */; };
-		7A98DCBF1C090D1F008045EB /* CDMCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */; };
-		7A98DCC01C090D1F008045EB /* CDMTableViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */; };
+		7A8C6D6D1C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C6D651C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.m */; };
+		7A8C6D6E1C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C6D671C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.m */; };
+		7A8C6D6F1C4EE2A600365CC4 /* CDMCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C6D6C1C4EE2A600365CC4 /* CDMCoreDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,14 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7A14ACEA1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMCollectionViewFetchedResultsController.h; sourceTree = "<group>"; };
-		7A14ACEB1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCollectionViewFetchedResultsController.m; sourceTree = "<group>"; };
+		7A8C6D641C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMCollectionViewFetchedResultsController.h; sourceTree = "<group>"; };
+		7A8C6D651C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCollectionViewFetchedResultsController.m; sourceTree = "<group>"; };
+		7A8C6D661C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMTableViewFetchedResultsController.h; sourceTree = "<group>"; };
+		7A8C6D671C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMTableViewFetchedResultsController.m; sourceTree = "<group>"; };
+		7A8C6D691C4EE2A600365CC4 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		7A8C6D6B1C4EE2A600365CC4 /* CDMCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMCoreDataManager.h; sourceTree = "<group>"; };
+		7A8C6D6C1C4EE2A600365CC4 /* CDMCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCoreDataManager.m; sourceTree = "<group>"; };
 		7A98DC611C0909C2008045EB /* libCoreDataManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreDataManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A98DCBB1C090D1F008045EB /* CDMCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMCoreDataManager.h; sourceTree = "<group>"; };
-		7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMCoreDataManager.m; sourceTree = "<group>"; };
-		7A98DCBD1C090D1F008045EB /* CDMTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMTableViewFetchedResultsController.h; sourceTree = "<group>"; };
-		7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMTableViewFetchedResultsController.m; sourceTree = "<group>"; };
-		7AAD3FD21C09BE70009617BB /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A8C6D631C4EE2A600365CC4 /* FRC */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C6D641C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.h */,
+				7A8C6D651C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.m */,
+				7A8C6D661C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.h */,
+				7A8C6D671C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.m */,
+			);
+			path = FRC;
+			sourceTree = "<group>";
+		};
+		7A8C6D681C4EE2A600365CC4 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C6D691C4EE2A600365CC4 /* CoreDataManager.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		7A8C6D6A1C4EE2A600365CC4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C6D6B1C4EE2A600365CC4 /* CDMCoreDataManager.h */,
+				7A8C6D6C1C4EE2A600365CC4 /* CDMCoreDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		7A98DC581C0909C2008045EB = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +93,9 @@
 		7A98DC631C0909C2008045EB /* CoreDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				7A98DCBB1C090D1F008045EB /* CDMCoreDataManager.h */,
-				7A98DCBC1C090D1F008045EB /* CDMCoreDataManager.m */,
-				7A98DCBD1C090D1F008045EB /* CDMTableViewFetchedResultsController.h */,
-				7A98DCBE1C090D1F008045EB /* CDMTableViewFetchedResultsController.m */,
-				7A14ACEA1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.h */,
-				7A14ACEB1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m */,
-				7AAD3FD21C09BE70009617BB /* CoreDataManager.h */,
+				7A8C6D631C4EE2A600365CC4 /* FRC */,
+				7A8C6D681C4EE2A600365CC4 /* Header */,
+				7A8C6D6A1C4EE2A600365CC4 /* Manager */,
 			);
 			path = CoreDataManager;
 			sourceTree = "<group>";
@@ -132,9 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A98DCBF1C090D1F008045EB /* CDMCoreDataManager.m in Sources */,
-				7A98DCC01C090D1F008045EB /* CDMTableViewFetchedResultsController.m in Sources */,
-				7A14ACEC1C4BF89300E80C9E /* CDMCollectionViewFetchedResultsController.m in Sources */,
+				7A8C6D6D1C4EE2A600365CC4 /* CDMCollectionViewFetchedResultsController.m in Sources */,
+				7A8C6D6F1C4EE2A600365CC4 /* CDMCoreDataManager.m in Sources */,
+				7A8C6D6E1C4EE2A600365CC4 /* CDMTableViewFetchedResultsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
