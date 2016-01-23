@@ -8,16 +8,26 @@
 
 #import "CDFAppDelegate.h"
 
-@interface CDFAppDelegate ()
+#import "CoreDataFullStack.h"
+
+@interface CDFAppDelegate () <CDFCoreDataManagerDelegate>
 
 @end
 
 @implementation CDFAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    [CDFCoreDataManager sharedInstance].delegate = self;
+    
     return YES;
 }
+
+#pragma mark - CDFCoreDataManagerDelegate
+
+- (NSString *)coreDataModelName
+{
+    return @"example";
+}
+
 @end

@@ -12,11 +12,12 @@
 		7A7AA2841C53AE210046BC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7AA2831C53AE210046BC16 /* Assets.xcassets */; };
 		7A7AA2871C53AE210046BC16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7AA2851C53AE210046BC16 /* LaunchScreen.storyboard */; };
 		7A7AA2921C53AE220046BC16 /* CoreDataFullStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2911C53AE220046BC16 /* CoreDataFullStackTests.m */; };
-		7A7AA2A11C53B1200046BC16 /* CDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA29E1C53B1200046BC16 /* CDFAppDelegate.m */; };
-		7A7AA2A21C53B1200046BC16 /* CDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2A01C53B1200046BC16 /* CDFViewController.m */; };
 		7A7AA2AE1C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2A61C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m */; };
 		7A7AA2AF1C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2A81C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m */; };
 		7A7AA2B01C53B14C0046BC16 /* CDFCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2AD1C53B14C0046BC16 /* CDFCoreDataManager.m */; };
+		7A7AA2E71C53CC540046BC16 /* example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2E51C53CC540046BC16 /* example.xcdatamodeld */; };
+		7A7AA2EE1C53CDE40046BC16 /* CDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2EA1C53CDE40046BC16 /* CDFAppDelegate.m */; };
+		7A7AA2EF1C53CDE40046BC16 /* CDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2ED1C53CDE40046BC16 /* CDFViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +40,6 @@
 		7A7AA28D1C53AE220046BC16 /* CoreDataFullStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataFullStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7AA2911C53AE220046BC16 /* CoreDataFullStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataFullStackTests.m; sourceTree = "<group>"; };
 		7A7AA2931C53AE220046BC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A7AA29D1C53B1200046BC16 /* CDFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFAppDelegate.h; sourceTree = "<group>"; };
-		7A7AA29E1C53B1200046BC16 /* CDFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAppDelegate.m; sourceTree = "<group>"; };
-		7A7AA29F1C53B1200046BC16 /* CDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFViewController.h; sourceTree = "<group>"; };
-		7A7AA2A01C53B1200046BC16 /* CDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFViewController.m; sourceTree = "<group>"; };
 		7A7AA2A51C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFCollectionViewFetchedResultsController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7A7AA2A61C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFCollectionViewFetchedResultsController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7A7AA2A71C53B14C0046BC16 /* CDFTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFTableViewFetchedResultsController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -50,6 +47,11 @@
 		7A7AA2AA1C53B14C0046BC16 /* CoreDataFullStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataFullStack.h; sourceTree = "<group>"; };
 		7A7AA2AC1C53B14C0046BC16 /* CDFCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFCoreDataManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7A7AA2AD1C53B14C0046BC16 /* CDFCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFCoreDataManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A7AA2E61C53CC540046BC16 /* example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = example.xcdatamodel; sourceTree = "<group>"; };
+		7A7AA2E91C53CDE40046BC16 /* CDFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFAppDelegate.h; sourceTree = "<group>"; };
+		7A7AA2EA1C53CDE40046BC16 /* CDFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAppDelegate.m; sourceTree = "<group>"; };
+		7A7AA2EC1C53CDE40046BC16 /* CDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFViewController.h; sourceTree = "<group>"; };
+		7A7AA2ED1C53CDE40046BC16 /* CDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +124,9 @@
 		7A7AA29C1C53B1200046BC16 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				7A7AA29D1C53B1200046BC16 /* CDFAppDelegate.h */,
-				7A7AA29E1C53B1200046BC16 /* CDFAppDelegate.m */,
-				7A7AA29F1C53B1200046BC16 /* CDFViewController.h */,
-				7A7AA2A01C53B1200046BC16 /* CDFViewController.m */,
+				7A7AA2E81C53CDE40046BC16 /* AppDelegate */,
+				7A7AA2E21C53CC1C0046BC16 /* CoreData */,
+				7A7AA2EB1C53CDE40046BC16 /* ViewController */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -166,6 +167,48 @@
 				7A7AA2AD1C53B14C0046BC16 /* CDFCoreDataManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		7A7AA2E21C53CC1C0046BC16 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7A7AA2E31C53CC1C0046BC16 /* ManagedObjects */,
+				7A7AA2E41C53CC1C0046BC16 /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7A7AA2E31C53CC1C0046BC16 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		7A7AA2E41C53CC1C0046BC16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A7AA2E51C53CC540046BC16 /* example.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A7AA2E81C53CDE40046BC16 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7A7AA2E91C53CDE40046BC16 /* CDFAppDelegate.h */,
+				7A7AA2EA1C53CDE40046BC16 /* CDFAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7A7AA2EB1C53CDE40046BC16 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7A7AA2EC1C53CDE40046BC16 /* CDFViewController.h */,
+				7A7AA2ED1C53CDE40046BC16 /* CDFViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,12 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7AA2A21C53B1200046BC16 /* CDFViewController.m in Sources */,
-				7A7AA2A11C53B1200046BC16 /* CDFAppDelegate.m in Sources */,
 				7A7AA2AE1C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m in Sources */,
 				7A7AA2B01C53B14C0046BC16 /* CDFCoreDataManager.m in Sources */,
+				7A7AA2EE1C53CDE40046BC16 /* CDFAppDelegate.m in Sources */,
 				7A7AA2AF1C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m in Sources */,
+				7A7AA2EF1C53CDE40046BC16 /* CDFViewController.m in Sources */,
 				7A7AA2791C53AE210046BC16 /* main.m in Sources */,
+				7A7AA2E71C53CC540046BC16 /* example.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +516,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A7AA2E51C53CC540046BC16 /* example.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A7AA2E61C53CC540046BC16 /* example.xcdatamodel */,
+			);
+			currentVersion = 7A7AA2E61C53CC540046BC16 /* example.xcdatamodel */;
+			path = example.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7A7AA26C1C53AE210046BC16 /* Project object */;
 }
