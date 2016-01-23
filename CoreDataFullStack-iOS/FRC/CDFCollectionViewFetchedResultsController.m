@@ -1,5 +1,5 @@
 //
-//  CDMCollectionViewFetchedResultsController.m
+//  CDFCollectionViewFetchedResultsController.m
 //  CoreDataManager
 //
 //  Created by Gabriel Massana on 17/1/16.

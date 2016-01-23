@@ -1,5 +1,5 @@
 //
-//  CDMCoreDataManager.m
+//  CDFCoreDataManager.m
 //  Hot
 //
 //  Created by GabrielMassana on 11/11/2015.
@@ -8,8 +8,8 @@
 
 #import "CDFCoreDataManager.h"
 
-static NSString *const CDMPersistentStoreDirectoryName = @"persistent-store";
-static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
+static NSString *const CDFPersistentStoreDirectoryName = @"persistent-store";
+static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
 
 @interface CDFCoreDataManager ()
 
@@ -162,7 +162,7 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
     NSURL *applicationDocumentURL = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory
                                                                             inDomains:NSUserDomainMask] lastObject];
     
-    NSURL *storeDirectoryURL = [applicationDocumentURL URLByAppendingPathComponent:CDMPersistentStoreDirectoryName];
+    NSURL *storeDirectoryURL = [applicationDocumentURL URLByAppendingPathComponent:CDFPersistentStoreDirectoryName];
     
     return storeDirectoryURL;
 }
@@ -177,7 +177,7 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
 {
     NSString *modelFileName = [[self.modelURL lastPathComponent] stringByDeletingPathExtension];
     
-    NSString *storeFilePath = [NSString stringWithFormat:@"%@.%@", modelFileName, CDMPersistentStoreFileExtension];
+    NSString *storeFilePath = [NSString stringWithFormat:@"%@.%@", modelFileName, CDFPersistentStoreFileExtension];
     
     NSURL *storeURL = [self.storeDirectoryURL URLByAppendingPathComponent:storeFilePath];
     

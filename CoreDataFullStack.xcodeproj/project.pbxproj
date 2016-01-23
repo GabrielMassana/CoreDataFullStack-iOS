@@ -43,13 +43,13 @@
 		7A7AA29E1C53B1200046BC16 /* CDFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAppDelegate.m; sourceTree = "<group>"; };
 		7A7AA29F1C53B1200046BC16 /* CDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFViewController.h; sourceTree = "<group>"; };
 		7A7AA2A01C53B1200046BC16 /* CDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFViewController.m; sourceTree = "<group>"; };
-		7A7AA2A51C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFCollectionViewFetchedResultsController.h; sourceTree = "<group>"; };
-		7A7AA2A61C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFCollectionViewFetchedResultsController.m; sourceTree = "<group>"; };
-		7A7AA2A71C53B14C0046BC16 /* CDFTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFTableViewFetchedResultsController.h; sourceTree = "<group>"; };
-		7A7AA2A81C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFTableViewFetchedResultsController.m; sourceTree = "<group>"; };
+		7A7AA2A51C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFCollectionViewFetchedResultsController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7A7AA2A61C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFCollectionViewFetchedResultsController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A7AA2A71C53B14C0046BC16 /* CDFTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFTableViewFetchedResultsController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7A7AA2A81C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFTableViewFetchedResultsController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7A7AA2AA1C53B14C0046BC16 /* CoreDataFullStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataFullStack.h; sourceTree = "<group>"; };
-		7A7AA2AC1C53B14C0046BC16 /* CDFCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFCoreDataManager.h; sourceTree = "<group>"; };
-		7A7AA2AD1C53B14C0046BC16 /* CDFCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFCoreDataManager.m; sourceTree = "<group>"; };
+		7A7AA2AC1C53B14C0046BC16 /* CDFCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFCoreDataManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7A7AA2AD1C53B14C0046BC16 /* CDFCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFCoreDataManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

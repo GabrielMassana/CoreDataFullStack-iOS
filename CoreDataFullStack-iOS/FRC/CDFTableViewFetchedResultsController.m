@@ -1,5 +1,5 @@
 //
-//  CDMTableViewFetchedResultsController.m
+//  CDFTableViewFetchedResultsController.m
 //  Hot
 //
 //  Created by Gabriel Massana on 22/11/15.

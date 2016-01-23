@@ -1,5 +1,5 @@
 //
-//  CDMCoreDataManager.h
+//  CDFCoreDataManager.h
 //  Hot
 //
 //  Created by GabrielMassana on 11/11/2015.
@@ -13,7 +13,7 @@
 /**
  
  */
-@protocol CDMCoreDataManagerDelegate <NSObject>
+@protocol CDFCoreDataManagerDelegate <NSObject>
 
 /**
  
@@ -40,12 +40,12 @@
 /**
  
  */
-@property (nonatomic, weak) id <CDMCoreDataManagerDelegate> delegate;
+@property (nonatomic, weak) id <CDFCoreDataManagerDelegate> delegate;
 
 /*
- Returns the global CDMCoreDataManager instance.
+ Returns the global CDFCoreDataManager instance.
  
- @return CDMCoreDataManager instance.
+ @return CDFCoreDataManager instance.
  */
 + (instancetype)sharedInstance;
 

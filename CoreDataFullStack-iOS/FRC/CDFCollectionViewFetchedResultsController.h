@@ -1,5 +1,5 @@
 //
-//  CDMCollectionViewFetchedResultsController.h
+//  CDFCollectionViewFetchedResultsController.h
 //  CoreDataManager
 //
 //  Created by Gabriel Massana on 17/1/16.
@@ -13,7 +13,7 @@
 /**
  
  */
-@protocol CDMCollectionViewFetchedResultsControllerDelegate <NSObject>
+@protocol CDFCollectionViewFetchedResultsControllerDelegate <NSObject>
 
 /**
  
@@ -30,7 +30,7 @@
 /**
  
  */
-@property (nonatomic, weak) id<CDMCollectionViewFetchedResultsControllerDelegate> frcDelegate;
+@property (nonatomic, weak) id<CDFCollectionViewFetchedResultsControllerDelegate> frcDelegate;
 
 /**
  

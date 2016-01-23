@@ -1,5 +1,5 @@
 //
-//  CDMTableViewFetchedResultsController.h
+//  CDFTableViewFetchedResultsController.h
 //  Hot
 //
 //  Created by Gabriel Massana on 22/11/15.
@@ -13,7 +13,7 @@
 /**
  
  */
-@protocol CDMTableViewFetchedResultsControllerDelegate <NSObject>
+@protocol CDFTableViewFetchedResultsControllerDelegate <NSObject>
 
 /**
  
@@ -32,7 +32,7 @@
 /**
  
  */
-@property (nonatomic, weak) id<CDMTableViewFetchedResultsControllerDelegate> frcDelegate;
+@property (nonatomic, weak) id<CDFTableViewFetchedResultsControllerDelegate> frcDelegate;
 
 /**
  
