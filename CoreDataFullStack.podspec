@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
-  s.name         = "CoreDataManager"
-  s.version      = "1.0.4"
+  s.name         = "CoreDataFullStack"
+  s.version      = "0.2.0"
   s.summary      = "A static library project that simplifies Core Data."
 
   s.homepage     = "https://github.com/GabrielMassana"
@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/GabrielMassana/CoreDataManager-iOS.git", :tag => s.version, :branch => "master"}
+  s.source       = { :git => "https://github.com/GabrielMassana/CoreDataFullStack-iOS.git", :tag => s.version, :branch => "master"}
 
-  s.source_files  = "CoreDataManager/**/*.{h,m}"
-  s.public_header_files = "CoreDataManager/**/*.{h}"
+  s.source_files  = "CoreDataFullStack-iOS/**/*.{h,m}"
+  s.public_header_files = "CoreDataFullStack-iOS/**/*.{h}"
 
   s.requires_arc = true
 
