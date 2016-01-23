@@ -10,17 +10,36 @@
 
 #import <CoreData/CoreData.h>
 
+/**
+ 
+ */
 @protocol CDMCoreDataManagerDelegate <NSObject>
 
+/**
+ 
+ */
 - (NSString *)coreDataModelName;
 
 @end
 
+/**
+ 
+ */
 @interface CDMCoreDataManager : NSObject
 
+/**
+ 
+ */
 @property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
+
+/**
+ 
+ */
 @property (nonatomic, strong, readonly) NSManagedObjectContext *backgroundManagedObjectContext;
 
+/**
+ 
+ */
 @property (nonatomic, weak) id <CDMCoreDataManagerDelegate> delegate;
 
 /*

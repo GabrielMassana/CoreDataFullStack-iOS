@@ -10,18 +10,36 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 
+ */
 @protocol CDMCollectionViewFetchedResultsControllerDelegate <NSObject>
 
+/**
+ 
+ */
 - (void)didUpdateContent;
 
 @end
 
+/**
+ 
+ */
 @interface CDMCollectionViewFetchedResultsController : NSFetchedResultsController
 
-@property (atomic, weak) id<CDMCollectionViewFetchedResultsControllerDelegate> frcDelegate;
+/**
+ 
+ */
+@property (nonatomic, weak) id<CDMCollectionViewFetchedResultsControllerDelegate> frcDelegate;
 
+/**
+ 
+ */
 @property (nonatomic, weak) UICollectionView *collectionView;
 
+/**
+ 
+ */
 @property (nonatomic , assign) BOOL shouldUpdateSections;
 
 @end
