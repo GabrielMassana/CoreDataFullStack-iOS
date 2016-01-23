@@ -9,6 +9,8 @@
 
 Easiest way to build a Core Data full stack.
 
+#### Stack
+
 This project stack consists of two independent managed object contexts which are both connected to the same persistent store coordinator.  
 
 ![alt tag](http://floriankugler.com/images/cd-stack-3-d53fc6f6.png)
