@@ -7,7 +7,7 @@
 0.3.X
 
 - Delete
-- Retrive
+- Retrieve
 - Count
 
 1.0.X
