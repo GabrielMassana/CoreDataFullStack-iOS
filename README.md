@@ -49,9 +49,29 @@ Drag into your project the folder `/CoreDataFullStack-iOS`. That's all.
 
 ## Example
 
+#### Stack Set up
+
 ```objc
 
-soon
+//  AppDelegate.m
+
+#import "CoreDataFullStack.h"
+
+@interface AppDelegate () <CDFCoreDataManagerDelegate>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [CDFCoreDataManager sharedInstance].delegate = self;
+    
+    return YES;
+}
+
+#pragma mark - CDFCoreDataManagerDelegate
+
+- (NSString *)coreDataModelName
+{
+    return @"ModelName";
+}
 
 ```
 
