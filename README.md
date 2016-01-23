@@ -34,7 +34,7 @@ TODO: The project will have a full suite to access the objects.
 
 ```ruby
 platform :ios, '8.0'
-pod 'CoreDataFullStack', '~> 0.0'
+pod 'CoreDataFullStack', '~> 0.2'
 ```
 
 Then, run the following command:
