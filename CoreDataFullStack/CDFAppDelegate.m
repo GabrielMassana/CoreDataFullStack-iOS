@@ -6,13 +6,13 @@
 //  Copyright © 2016 Gabriel Massana. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CDFAppDelegate.h"
 
-@interface AppDelegate ()
+@interface CDFAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation CDFAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
