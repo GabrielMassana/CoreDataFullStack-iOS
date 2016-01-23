@@ -25,7 +25,7 @@
 /**
  
  */
-@interface CDMCollectionViewFetchedResultsController : NSFetchedResultsController
+@interface CDFCollectionViewFetchedResultsController : NSFetchedResultsController
 
 /**
  

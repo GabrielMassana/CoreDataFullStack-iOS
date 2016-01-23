@@ -6,13 +6,13 @@
 //  Copyright © 2015 Gabriel Massana. All rights reserved.
 //
 
-#import "CDMTableViewFetchedResultsController.h"
+#import "CDFTableViewFetchedResultsController.h"
 
-@interface CDMTableViewFetchedResultsController () <NSFetchedResultsControllerDelegate>
+@interface CDFTableViewFetchedResultsController () <NSFetchedResultsControllerDelegate>
 
 @end
 
-@implementation CDMTableViewFetchedResultsController
+@implementation CDFTableViewFetchedResultsController
 
 #pragma mark - Init
 

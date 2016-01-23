@@ -6,16 +6,16 @@
 //  Copyright © 2016 Gabriel Massana. All rights reserved.
 //
 
-#import "CDMCollectionViewFetchedResultsController.h"
+#import "CDFCollectionViewFetchedResultsController.h"
 
-@interface CDMCollectionViewFetchedResultsController () <NSFetchedResultsControllerDelegate>
+@interface CDFCollectionViewFetchedResultsController () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *itemChanges;
 @property (nonatomic, strong) NSMutableArray *sectionChanges;
 
 @end
 
-@implementation CDMCollectionViewFetchedResultsController
+@implementation CDFCollectionViewFetchedResultsController
 
 #pragma mark - Init
 

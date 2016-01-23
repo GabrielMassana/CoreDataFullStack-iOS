@@ -27,7 +27,7 @@
 
 @end
 
-@interface CDMTableViewFetchedResultsController : NSFetchedResultsController
+@interface CDFTableViewFetchedResultsController : NSFetchedResultsController
 
 /**
  
