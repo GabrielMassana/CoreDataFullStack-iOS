@@ -47,7 +47,32 @@ $ pod install
 
 Drag into your project the folder `/CoreDataFullStack-iOS`. That's all.
 
-## Example
+## How to
+
+#### General rule
+
+To modify the database (insert new object, delete, update) access via the background ```backgroundManagedObjectContext```.
+
+To retrieve data to be shown in the UI access via the MainThread ```managedObjectContext```
+
+###### IMPORTANT
+
+To avoid crossing threads use ```performBlockAndWait:^``` with the ```backgroundManagedObjectContext```
+
+```objc
+	[[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
+    {
+    	// Insert
+    	// Delete
+    	// Update
+    }
+```
+
+Go to Edit Scheme.../ Arguments / Arguments Passed On Launch and add: ```-com.apple.CoreData.ConcurrencyDebug 1```
+
+This line will tell you if you are crossing threads in your app.
+
+To avoid problems be totally sure that your app is not crossing threads.
 
 #### Stack Set up
 
@@ -82,7 +107,7 @@ CoreDataFullStack-iOS is released under the MIT license. Please see the file cal
 ## Versions
 
 ```bash
-$ git tag -a 1.0.0 -m 'Version 1.0.0'
+$ git tag -a 0.2.0 -m 'Version 0.2.0'
 
 $ git push --tags
 ```

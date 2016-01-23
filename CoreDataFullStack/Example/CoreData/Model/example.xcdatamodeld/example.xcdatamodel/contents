@@ -3,12 +3,12 @@
     <entity name="CDFHouse" representedClassName="CDFHouse" syncable="YES">
         <attribute name="houseID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="town" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="persons" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="CDFPerson" inverseName="house" inverseEntity="CDFPerson" syncable="YES"/>
+        <relationship name="persons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDFPerson" inverseName="house" inverseEntity="CDFPerson" syncable="YES"/>
     </entity>
     <entity name="CDFPerson" representedClassName="CDFPerson" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="personID" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="house" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="CDFHouse" inverseName="persons" inverseEntity="CDFHouse" syncable="YES"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDFHouse" inverseName="persons" inverseEntity="CDFHouse" syncable="YES"/>
     </entity>
     <elements>
         <element name="CDFHouse" positionX="-45" positionY="36" width="128" height="90"/>
