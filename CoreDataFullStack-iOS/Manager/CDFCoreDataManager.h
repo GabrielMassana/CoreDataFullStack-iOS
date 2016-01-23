@@ -25,7 +25,7 @@
 /**
  
  */
-@interface CDMCoreDataManager : NSObject
+@interface CDFCoreDataManager : NSObject
 
 /**
  

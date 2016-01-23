@@ -6,12 +6,12 @@
 //  Copyright © 2015 Gabriel Massana. All rights reserved.
 //
 
-#import "CDMCoreDataManager.h"
+#import "CDFCoreDataManager.h"
 
 static NSString *const CDMPersistentStoreDirectoryName = @"persistent-store";
 static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
 
-@interface CDMCoreDataManager ()
+@interface CDFCoreDataManager ()
 
 @property (nonatomic, strong) NSURL *modelURL;
 @property (nonatomic, strong, readwrite) NSManagedObjectContext *managedObjectContext;
@@ -23,18 +23,18 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
 
 @end
 
-@implementation CDMCoreDataManager
+@implementation CDFCoreDataManager
 
 #pragma mark - SharedInstance
 
 + (instancetype)sharedInstance
 {
-    static CDMCoreDataManager *sharedInstance = nil;
+    static CDFCoreDataManager *sharedInstance = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
                   {
-                      sharedInstance = [[CDMCoreDataManager alloc] init];
+                      sharedInstance = [[CDFCoreDataManager alloc] init];
                   });
     
     return sharedInstance;
