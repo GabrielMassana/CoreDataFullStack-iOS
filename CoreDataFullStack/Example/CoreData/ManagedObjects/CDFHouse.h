@@ -1,5 +1,5 @@
 //
-//  House.h
+//  CDFHouse.h
 //  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 23/1/16.
@@ -9,11 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Person;
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface House : NSManagedObject
+@interface CDFHouse : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -21,4 +19,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "House+CoreDataProperties.h"
+#import "CDFHouse+CoreDataProperties.h"

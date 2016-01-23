@@ -18,10 +18,10 @@
 		7A7AA2E71C53CC540046BC16 /* example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2E51C53CC540046BC16 /* example.xcdatamodeld */; };
 		7A7AA2EE1C53CDE40046BC16 /* CDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2EA1C53CDE40046BC16 /* CDFAppDelegate.m */; };
 		7A7AA2EF1C53CDE40046BC16 /* CDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2ED1C53CDE40046BC16 /* CDFViewController.m */; };
-		7A7AA2F81C53D4A40046BC16 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2F11C53D4A40046BC16 /* Person+CoreDataProperties.m */; };
-		7A7AA2F91C53D4A40046BC16 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2F31C53D4A40046BC16 /* Person.m */; };
-		7A7AA2FA1C53D4A40046BC16 /* House+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2F51C53D4A40046BC16 /* House+CoreDataProperties.m */; };
-		7A7AA2FB1C53D4A40046BC16 /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA2F71C53D4A40046BC16 /* House.m */; };
+		7A7AA3101C53D7370046BC16 /* CDFHouse+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA3091C53D7370046BC16 /* CDFHouse+CoreDataProperties.m */; };
+		7A7AA3111C53D7370046BC16 /* CDFHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA30B1C53D7370046BC16 /* CDFHouse.m */; };
+		7A7AA3121C53D7370046BC16 /* CDFPerson+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA30D1C53D7370046BC16 /* CDFPerson+CoreDataProperties.m */; };
+		7A7AA3131C53D7370046BC16 /* CDFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA30F1C53D7370046BC16 /* CDFPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +56,14 @@
 		7A7AA2EA1C53CDE40046BC16 /* CDFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAppDelegate.m; sourceTree = "<group>"; };
 		7A7AA2EC1C53CDE40046BC16 /* CDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFViewController.h; sourceTree = "<group>"; };
 		7A7AA2ED1C53CDE40046BC16 /* CDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFViewController.m; sourceTree = "<group>"; };
-		7A7AA2F01C53D4A40046BC16 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		7A7AA2F11C53D4A40046BC16 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
-		7A7AA2F21C53D4A40046BC16 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		7A7AA2F31C53D4A40046BC16 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		7A7AA2F41C53D4A40046BC16 /* House+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "House+CoreDataProperties.h"; sourceTree = "<group>"; };
-		7A7AA2F51C53D4A40046BC16 /* House+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "House+CoreDataProperties.m"; sourceTree = "<group>"; };
-		7A7AA2F61C53D4A40046BC16 /* House.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
-		7A7AA2F71C53D4A40046BC16 /* House.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = House.m; sourceTree = "<group>"; };
+		7A7AA3081C53D7370046BC16 /* CDFHouse+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDFHouse+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7A7AA3091C53D7370046BC16 /* CDFHouse+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDFHouse+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7A7AA30A1C53D7370046BC16 /* CDFHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFHouse.h; sourceTree = "<group>"; };
+		7A7AA30B1C53D7370046BC16 /* CDFHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFHouse.m; sourceTree = "<group>"; };
+		7A7AA30C1C53D7370046BC16 /* CDFPerson+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDFPerson+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7A7AA30D1C53D7370046BC16 /* CDFPerson+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDFPerson+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7A7AA30E1C53D7370046BC16 /* CDFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFPerson.h; sourceTree = "<group>"; };
+		7A7AA30F1C53D7370046BC16 /* CDFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,14 +193,14 @@
 		7A7AA2E31C53CC1C0046BC16 /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				7A7AA2F01C53D4A40046BC16 /* Person+CoreDataProperties.h */,
-				7A7AA2F11C53D4A40046BC16 /* Person+CoreDataProperties.m */,
-				7A7AA2F21C53D4A40046BC16 /* Person.h */,
-				7A7AA2F31C53D4A40046BC16 /* Person.m */,
-				7A7AA2F41C53D4A40046BC16 /* House+CoreDataProperties.h */,
-				7A7AA2F51C53D4A40046BC16 /* House+CoreDataProperties.m */,
-				7A7AA2F61C53D4A40046BC16 /* House.h */,
-				7A7AA2F71C53D4A40046BC16 /* House.m */,
+				7A7AA3081C53D7370046BC16 /* CDFHouse+CoreDataProperties.h */,
+				7A7AA3091C53D7370046BC16 /* CDFHouse+CoreDataProperties.m */,
+				7A7AA30A1C53D7370046BC16 /* CDFHouse.h */,
+				7A7AA30B1C53D7370046BC16 /* CDFHouse.m */,
+				7A7AA30C1C53D7370046BC16 /* CDFPerson+CoreDataProperties.h */,
+				7A7AA30D1C53D7370046BC16 /* CDFPerson+CoreDataProperties.m */,
+				7A7AA30E1C53D7370046BC16 /* CDFPerson.h */,
+				7A7AA30F1C53D7370046BC16 /* CDFPerson.m */,
 			);
 			path = ManagedObjects;
 			sourceTree = "<group>";
@@ -331,15 +331,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7AA2FA1C53D4A40046BC16 /* House+CoreDataProperties.m in Sources */,
-				7A7AA2F81C53D4A40046BC16 /* Person+CoreDataProperties.m in Sources */,
 				7A7AA2AE1C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m in Sources */,
 				7A7AA2B01C53B14C0046BC16 /* CDFCoreDataManager.m in Sources */,
+				7A7AA3131C53D7370046BC16 /* CDFPerson.m in Sources */,
+				7A7AA3121C53D7370046BC16 /* CDFPerson+CoreDataProperties.m in Sources */,
 				7A7AA2EE1C53CDE40046BC16 /* CDFAppDelegate.m in Sources */,
+				7A7AA3111C53D7370046BC16 /* CDFHouse.m in Sources */,
 				7A7AA2AF1C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m in Sources */,
+				7A7AA3101C53D7370046BC16 /* CDFHouse+CoreDataProperties.m in Sources */,
 				7A7AA2EF1C53CDE40046BC16 /* CDFViewController.m in Sources */,
-				7A7AA2F91C53D4A40046BC16 /* Person.m in Sources */,
-				7A7AA2FB1C53D4A40046BC16 /* House.m in Sources */,
 				7A7AA2791C53AE210046BC16 /* main.m in Sources */,
 				7A7AA2E71C53CC540046BC16 /* example.xcdatamodeld in Sources */,
 			);

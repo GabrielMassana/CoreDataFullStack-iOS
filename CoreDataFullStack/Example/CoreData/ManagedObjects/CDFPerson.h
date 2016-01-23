@@ -1,5 +1,5 @@
 //
-//  Person.h
+//  CDFPerson.h
 //  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 23/1/16.
@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class CDFHouse;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSManagedObject
+@interface CDFPerson : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -19,4 +21,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "Person+CoreDataProperties.h"
+#import "CDFPerson+CoreDataProperties.h"

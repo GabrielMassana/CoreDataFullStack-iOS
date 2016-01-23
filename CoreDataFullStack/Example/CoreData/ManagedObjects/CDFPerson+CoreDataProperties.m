@@ -1,5 +1,5 @@
 //
-//  House+CoreDataProperties.m
+//  CDFPerson+CoreDataProperties.m
 //  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 23/1/16.
@@ -9,12 +9,12 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "House+CoreDataProperties.h"
+#import "CDFPerson+CoreDataProperties.h"
 
-@implementation House (CoreDataProperties)
+@implementation CDFPerson (CoreDataProperties)
 
-@dynamic houseID;
-@dynamic town;
-@dynamic persons;
+@dynamic name;
+@dynamic personID;
+@dynamic house;
 
 @end

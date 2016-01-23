@@ -1,5 +1,5 @@
 //
-//  House+CoreDataProperties.h
+//  CDFHouse+CoreDataProperties.h
 //  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 23/1/16.
@@ -9,24 +9,24 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "House.h"
+#import "CDFHouse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface House (CoreDataProperties)
+@interface CDFHouse (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *houseID;
 @property (nullable, nonatomic, retain) NSString *town;
-@property (nullable, nonatomic, retain) NSSet<Person *> *persons;
+@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *persons;
 
 @end
 
-@interface House (CoreDataGeneratedAccessors)
+@interface CDFHouse (CoreDataGeneratedAccessors)
 
-- (void)addPersonsObject:(Person *)value;
-- (void)removePersonsObject:(Person *)value;
-- (void)addPersons:(NSSet<Person *> *)values;
-- (void)removePersons:(NSSet<Person *> *)values;
+- (void)addPersonsObject:(NSManagedObject *)value;
+- (void)removePersonsObject:(NSManagedObject *)value;
+- (void)addPersons:(NSSet<NSManagedObject *> *)values;
+- (void)removePersons:(NSSet<NSManagedObject *> *)values;
 
 @end
 
