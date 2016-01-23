@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "CoreDataFullStack"
   s.version      = "0.2.0"
-  s.summary      = "A static library project that simplifies Core Data."
+  s.summary      = "Easiest way to build a Core Data full stack. With Table and Collection View FRC. With easy Deletion, Retrieve and Count."
 
   s.homepage     = "https://github.com/GabrielMassana"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md'}
