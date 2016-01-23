@@ -30,7 +30,7 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
 + (instancetype)sharedInstance
 {
     static CDMCoreDataManager *sharedInstance = nil;
-
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
                   {
@@ -55,7 +55,6 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
     return _managedObjectModel;
 }
 
-
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
     if (!_persistentStoreCoordinator)
@@ -73,9 +72,11 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
     if (!_managedObjectContext)
     {
         _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-        [_managedObjectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
+        _managedObjectContext.undoManager = nil;
+        
+        _managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
     }
-
+    
     return _managedObjectContext;
 }
 
@@ -84,12 +85,28 @@ static NSString *const CDMPersistentStoreFileExtension = @"sqlite";
     if (!_backgroundManagedObjectContext)
     {
         _backgroundManagedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-        [_backgroundManagedObjectContext setParentContext:self.managedObjectContext];
         
-        [_backgroundManagedObjectContext setUndoManager:nil];
+        _backgroundManagedObjectContext.undoManager = nil;
+        _backgroundManagedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
+        
         [_backgroundManagedObjectContext setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy];
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:NSManagedObjectContextDidSaveNotification
+                                                          object:nil
+                                                           queue:nil
+                                                      usingBlock:^(NSNotification* notification)
+         {
+             NSManagedObjectContext *context = self.managedObjectContext;
+             if (notification.object != context)
+             {
+                 [context performBlock:^()
+                  {
+                      [context mergeChangesFromContextDidSaveNotification:notification];
+                  }];
+             }
+         }];
     }
-
+    
     return _backgroundManagedObjectContext;
 }
 

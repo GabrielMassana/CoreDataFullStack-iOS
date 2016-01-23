@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "A static library project that simplifies Core Data."
 
   s.homepage     = "https://github.com/GabrielMassana"
-  s.license      = { :type => 'BSD'}
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md'}
   s.author       = { "Gabriel Massana" => "gabrielmassana@gmail.com" }
 
   s.platform     = :ios, "8.0"
