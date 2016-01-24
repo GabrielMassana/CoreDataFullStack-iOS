@@ -34,7 +34,7 @@ TODO: The project will have a full suite to access the objects.
 
 ```ruby
 platform :ios, '8.0'
-pod 'CoreDataFullStack', '~> 0.2'
+pod 'CoreDataFullStack', '~> 0.3'
 ```
 
 Then, run the following command:
@@ -100,6 +100,53 @@ To avoid problems be totally sure that your app is not crossing threads.
 
 ```
 
+#### Insert
+
+Use CoreData system. It is really easy.
+
+```objc
+
+[[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
+    {
+        CDFHouse *firstHouse = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFHouse class])
+                                                           inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+        
+        firstHouse.houseID = @"0";
+        firstHouse.town = @"London";
+        
+        CDFPerson *firstPerson = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFPerson class])
+                                                             inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+        
+        firstPerson.personID = @"0";
+        firstPerson.name = @"John";
+        firstPerson.house = firstHouse;
+
+        [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext save:nil];
+    }];
+
+```
+
+#### Retrieve
+
+```objc
+    NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class] managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
+```
+
+#### Delete
+```objc
+    [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
+     {
+         [CDFDeletionService deleteEntriesForEntityClass:[CDFHouse class]
+                                       saveAfterDeletion:YES
+                                    managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+     }];
+```
+
+#### Count
+```objc
+	NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class]
+                                                     	 managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
+```
 ## License
 
 CoreDataFullStack-iOS is released under the MIT license. Please see the file called LICENSE.
@@ -107,7 +154,7 @@ CoreDataFullStack-iOS is released under the MIT license. Please see the file cal
 ## Versions
 
 ```bash
-$ git tag -a 0.2.0 -m 'Version 0.2.0'
+$ git tag -a 0.3.0 -m 'Version 0.3.0'
 
 $ git push --tags
 ```
