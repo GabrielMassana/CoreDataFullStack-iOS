@@ -81,7 +81,8 @@
 
 - (void)retrieveObjects
 {
-    NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class] managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
+    NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class]
+                                                     managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
 
     // NSLog retrieve example
     if (entries.count > 0)
