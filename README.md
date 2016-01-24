@@ -109,13 +109,13 @@ Use CoreData system. It is really easy.
 [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
     {
         CDFHouse *firstHouse = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFHouse class])
-                                                           inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+                                                             inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
         
         firstHouse.houseID = @"0";
         firstHouse.town = @"London";
         
         CDFPerson *firstPerson = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFPerson class])
-                                                             inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+                                                               inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
         
         firstPerson.personID = @"0";
         firstPerson.name = @"John";
@@ -145,7 +145,7 @@ Use CoreData system. It is really easy.
 #### Count
 ```objc
 	NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class]
-                                                     	 managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
+                                                     managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
 ```
 ## License
 
