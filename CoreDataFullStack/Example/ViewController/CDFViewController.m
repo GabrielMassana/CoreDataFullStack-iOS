@@ -26,6 +26,8 @@
     
     [self deleteOldObjects];
     
+    [self countObjects];
+
     [self insertNewObjects];
     
     [self retrieveObjects];
@@ -39,20 +41,9 @@
 {
     [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
      {
-         NSString *entityName = NSStringFromClass([CDFHouse class]);
-         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:entityName];
-         
-         NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"houseID"
-                                                              ascending:YES];
-         
-         [request setSortDescriptors:[[NSArray alloc] initWithObjects:sort, nil]];
-         
-         NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class] managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
-         
-         for (CDFHouse *house in entries)
-         {
-             [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext deleteObject:house];
-         }
+         [CDFDeletionService deleteEntriesForEntityClass:[CDFHouse class]
+                                       saveAfterDeletion:YES
+                                    managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
      }];
 }
 
@@ -90,17 +81,9 @@
 
 - (void)retrieveObjects
 {
-    NSString *entityName = NSStringFromClass([CDFHouse class]);
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:entityName];
-    
-    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"houseID"
-                                                             ascending:YES];
-    
-    [request setSortDescriptors:[[NSArray alloc] initWithObjects:sort, nil]];
-    
-    
     NSArray *entries = [CDFRetrievalService retrieveEntriesForEntityClass:[CDFHouse class] managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
 
+    // NSLog retrieve example
     if (entries.count > 0)
     {
         NSLog(@"house = %@", (CDFHouse *)entries[0]);
@@ -120,8 +103,8 @@
     
     NSInteger personCount = [CDFCountService retrieveEntriesCountForEntityClass:[CDFPerson class] managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
     
-    NSLog(@"%@", @(houseCount));
-    NSLog(@"%@", @(personCount));
+    NSLog(@"houseCount: %@", @(houseCount));
+    NSLog(@"personCount: %@", @(personCount));
 }
 
 @end
