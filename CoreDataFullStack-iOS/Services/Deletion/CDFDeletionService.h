@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <CoreData/CoreData.h>
+
 @interface CDFDeletionService : NSObject
 
 @end

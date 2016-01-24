@@ -10,7 +10,7 @@
 
 #import "CDFHouse.h"
 #import "CDFPerson.h"
-#import "CDFCoreDataManager.h"
+#import "CoreDataFullStack.h"
 
 @interface CDFViewController ()
 
@@ -29,9 +29,21 @@
     [self insertNewObjects];
     
     [self retrieveObjects];
+    
+    [self countObjects];
 }
 
 #pragma mark - Examples
+
+- (void)countObjects
+{
+    NSInteger houseCount = [CDFCountService retrieveEntriesCountForEntityClass:[CDFHouse class] managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
+    
+    NSInteger personCount = [CDFCountService retrieveEntriesCountForEntityClass:[CDFPerson class] managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext];
+    
+    NSLog(@"%@", @(houseCount));
+    NSLog(@"%@", @(personCount));
+}
 
 - (void)deleteOldObjects
 {
