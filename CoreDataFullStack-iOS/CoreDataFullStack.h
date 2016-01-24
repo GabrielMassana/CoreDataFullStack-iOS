@@ -12,5 +12,8 @@
     #import "CDFCoreDataManager.h"
     #import "CDFTableViewFetchedResultsController.h"
     #import "CDFCollectionViewFetchedResultsController.h"
+    #import "CDFCountService.h"
+    #import "CDFDeletionService.h"
+    #import "CDFRetrievalService.h"
 
 #endif
