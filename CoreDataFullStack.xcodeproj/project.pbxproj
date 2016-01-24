@@ -48,7 +48,6 @@
 		7A7AA2A61C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFCollectionViewFetchedResultsController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7A7AA2A71C53B14C0046BC16 /* CDFTableViewFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFTableViewFetchedResultsController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7A7AA2A81C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFTableViewFetchedResultsController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		7A7AA2AA1C53B14C0046BC16 /* CoreDataFullStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataFullStack.h; sourceTree = "<group>"; };
 		7A7AA2AC1C53B14C0046BC16 /* CDFCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDFCoreDataManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7A7AA2AD1C53B14C0046BC16 /* CDFCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDFCoreDataManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7A7AA2E61C53CC540046BC16 /* example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = example.xcdatamodel; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		7A7AA30D1C53D7370046BC16 /* CDFPerson+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDFPerson+CoreDataProperties.m"; sourceTree = "<group>"; };
 		7A7AA30E1C53D7370046BC16 /* CDFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFPerson.h; sourceTree = "<group>"; };
 		7A7AA30F1C53D7370046BC16 /* CDFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFPerson.m; sourceTree = "<group>"; };
+		7A7AA3141C54DFAA0046BC16 /* CoreDataFullStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataFullStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 		7A7AA2A31C53B14C0046BC16 /* CoreDataFullStack-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7A7AA3141C54DFAA0046BC16 /* CoreDataFullStack.h */,
 				7A7AA2A41C53B14C0046BC16 /* FRC */,
-				7A7AA2A91C53B14C0046BC16 /* Header */,
 				7A7AA2AB1C53B14C0046BC16 /* Manager */,
 			);
 			path = "CoreDataFullStack-iOS";
@@ -162,14 +162,6 @@
 				7A7AA2A81C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m */,
 			);
 			path = FRC;
-			sourceTree = "<group>";
-		};
-		7A7AA2A91C53B14C0046BC16 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				7A7AA2AA1C53B14C0046BC16 /* CoreDataFullStack.h */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		7A7AA2AB1C53B14C0046BC16 /* Manager */ = {
