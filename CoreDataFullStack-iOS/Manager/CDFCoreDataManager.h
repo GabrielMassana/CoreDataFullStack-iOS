@@ -44,14 +44,14 @@
  */
 @property (nonatomic, weak) id <CDFCoreDataManagerDelegate> delegate;
 
-/*
+/**
  Returns the global CDFCoreDataManager instance.
  
  @return CDFCoreDataManager instance.
  */
 + (instancetype)sharedInstance;
 
-/*
+/**
  Saves the managedObjectContext.
  */
 - (void)saveManagedObjectContext;

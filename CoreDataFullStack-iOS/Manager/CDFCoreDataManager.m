@@ -2,7 +2,7 @@
 //  CDFCoreDataManager.m
 //  CoreDataFullStack
 //
-//  Created by GabrielMassana on 11/11/2015.
+//  Created by Gabriel Massana on 11/11/2015.
 //  Copyright © 2015 Gabriel Massana. All rights reserved.
 //
 

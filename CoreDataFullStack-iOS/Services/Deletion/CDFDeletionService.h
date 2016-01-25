@@ -17,7 +17,7 @@
 
 #pragma mark - Single
 
-/*
+/**
  Deletes an nsmanagedobject from specfic context
  
  @param managedObject - to be deleted
@@ -26,7 +26,7 @@
 + (void) deleteManagedObject:(NSManagedObject *)managedObject
         managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Deletes an nsmanagedobject from specfic context
  
  @param managedObject - to be deleted
@@ -39,7 +39,7 @@
 
 #pragma mark - Multiple
 
-/*
+/**
  Deletes entites from specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -48,7 +48,7 @@
 + (void) deleteEntriesForEntityClass:(Class)entityClass
                 managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Deletes entites from specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -59,7 +59,7 @@
                    saveAfterDeletion:(BOOL)saveAfterDeletion
                 managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Deletes entites that match the predicate from specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -70,7 +70,7 @@
                            predicate:(NSPredicate *)predicate
                 managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Deletes entites that match the predicate from specfic context
  
  @param entityClass - a class value for the entity in core data

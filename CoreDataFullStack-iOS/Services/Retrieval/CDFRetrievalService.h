@@ -15,7 +15,7 @@
  */
 @interface CDFRetrievalService : NSObject
 
-/*
+/**
  Retrieves ordered entries for an entity in core data that match the provided predicate's conditions from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -36,7 +36,7 @@
                                  fetchLimit:(NSUInteger)fetchLimit
                        managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Retrieves ordered entries for an entity in core data that match the provided predicate's conditions from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -55,7 +55,7 @@
                              fetchBatchSize:(NSUInteger)fetchBatchSize
                        managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Retrieves ordered entries for an entity in core data that match the provided predicate's conditions from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -71,7 +71,7 @@
                                     orderBy:(NSString *)orderBy
                              ascendingOrder:(BOOL)ascending
                        managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
-/*
+/**
  Retrieves all entries for an entity in core data from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -82,7 +82,7 @@
 + (NSArray *) retrieveEntriesForEntityClass:(Class)entityClass
                        managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Retrieves all entries for an entity in core data from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -96,7 +96,7 @@
                        managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
 
-/*
+/**
  Retrieves entries for an entity in core data that match the provided predicate's conditions from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -110,7 +110,7 @@
                        managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
 
-/*
+/**
  Retrieves entries for an entity in core data that match the provided predicate's conditions from a specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -126,7 +126,7 @@
 
 #pragma mark - Single retrieval
 
-/*
+/**
  Retrieves first entry for an entity in core data from specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -143,7 +143,7 @@
                          ascendingOrder:(BOOL)ascending
                    managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Retrieves first entry for an entity in core data from a specifc context
  
  @param entityClass - a class value for the entity in core data
@@ -153,7 +153,7 @@
 + (id) retrieveFirstEntryForEntityClass:(Class)entityClass
                    managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Retrieves first entry for an entity in core data that match the provided predicate's conditions from specfic context
  
  @param entityClass - a class value for the entity in core data

@@ -15,7 +15,7 @@
  */
 @interface CDFCountService : NSObject
 
-/*
+/**
  Retrieves the count of entries from specfic context
  
  @param entityClass - a class value for the entity in core data
@@ -26,7 +26,7 @@
 + (NSUInteger) retrieveEntriesCountForEntityClass:(Class)entityClass
                              managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
-/*
+/**
  Retrieves the count of entries that match the provided predicate's conditions from specfic context
  
  @param entityClass - a class value for the entity in core data
