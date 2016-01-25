@@ -10,7 +10,14 @@
 
 @interface CDFCollectionViewFetchedResultsController () <NSFetchedResultsControllerDelegate>
 
+/**
+ Array with all the items changes to be done.
+ */
 @property (nonatomic, strong) NSMutableArray *itemChanges;
+
+/**
+ Array with all the section changes to be done.
+ */
 @property (nonatomic, strong) NSMutableArray *sectionChanges;
 
 @end

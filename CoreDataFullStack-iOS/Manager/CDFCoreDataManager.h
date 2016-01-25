@@ -29,8 +29,6 @@
 
 /**
  ManagedObjectContext that is used to run in the Main Thread.
- 
- @return Managed Object Context.
  */
 @property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
 
@@ -38,8 +36,6 @@
  ManagedObjectContext used to insert, delete and update the database.
  
  It is also used to background thread operations.
- 
- @return Managed Object Context
  */
 @property (nonatomic, strong, readonly) NSManagedObjectContext *backgroundManagedObjectContext;
 

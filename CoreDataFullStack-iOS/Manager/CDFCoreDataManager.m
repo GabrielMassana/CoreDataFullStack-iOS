@@ -13,12 +13,32 @@ static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
 
 @interface CDFCoreDataManager ()
 
+/**
+ The model internal URL.
+ */
 @property (nonatomic, strong) NSURL *modelURL;
+
 @property (nonatomic, strong, readwrite) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong, readwrite) NSManagedObjectContext *backgroundManagedObjectContext;
+
+/**
+ Core Data Stack Managed Object Model.
+ */
 @property (nonatomic, strong, readwrite) NSManagedObjectModel *managedObjectModel;
+
+/**
+ Persistent store coordinator used with the stack
+ */
 @property (nonatomic, strong, readwrite) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+/**
+ Local store URL.
+ */
 @property (nonatomic, strong, readonly) NSURL *storeDirectoryURL;
+
+/**
+ Disk store URL.
+ */
 @property (nonatomic, strong, readonly) NSURL *storeURL;
 
 @end
