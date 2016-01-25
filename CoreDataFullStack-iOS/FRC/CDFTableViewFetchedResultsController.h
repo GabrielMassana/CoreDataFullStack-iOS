@@ -10,6 +10,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Table View Callbacks.
+ */
 @protocol CDFTableViewFetchedResultsControllerDelegate <NSObject>
 
 /**
@@ -28,6 +31,9 @@
 
 @end
 
+/**
+ Easy table View FRC with all the delegate methods.
+ */
 @interface CDFTableViewFetchedResultsController : NSFetchedResultsController
 
 /**

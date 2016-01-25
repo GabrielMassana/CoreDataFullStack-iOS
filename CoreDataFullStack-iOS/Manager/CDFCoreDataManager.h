@@ -10,6 +10,9 @@
 
 #import <CoreData/CoreData.h>
 
+/**
+ Manager Delegate to help build the stack.
+ */
 @protocol CDFCoreDataManagerDelegate <NSObject>
 
 /**
@@ -20,7 +23,7 @@
 @end
 
 /**
- MAin Manager of the framework. This class will build the Core Data Stack.
+ Main Manager of the framework. This class will build the Core Data Stack.
  */
 @interface CDFCoreDataManager : NSObject
 

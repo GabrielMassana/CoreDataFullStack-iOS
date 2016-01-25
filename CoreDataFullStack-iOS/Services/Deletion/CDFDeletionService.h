@@ -10,6 +10,9 @@
 
 #import <CoreData/CoreData.h>
 
+/**
+ Help service to simplify deletion.
+ */
 @interface CDFDeletionService : NSObject
 
 #pragma mark - Single

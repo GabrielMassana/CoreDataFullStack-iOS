@@ -10,6 +10,9 @@
 
 #import <CoreData/CoreData.h>
 
+/**
+ Help service to simplify data retrieval.
+ */
 @interface CDFRetrievalService : NSObject
 
 /*

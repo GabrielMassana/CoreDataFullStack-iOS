@@ -10,6 +10,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Collection View Callbacks.
+ */
 @protocol CDFCollectionViewFetchedResultsControllerDelegate <NSObject>
 
 /**
@@ -19,6 +22,9 @@
 
 @end
 
+/**
+ Easy Collection View FRC with all the delegate methods.
+ */
 @interface CDFCollectionViewFetchedResultsController : NSFetchedResultsController
 
 /**
