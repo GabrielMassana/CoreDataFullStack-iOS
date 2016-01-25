@@ -1,6 +1,6 @@
 //
 //  CDFCoreDataManager.h
-//  Hot
+//  CoreDataFullStack
 //
 //  Created by GabrielMassana on 11/11/2015.
 //  Copyright © 2015 Gabriel Massana. All rights reserved.

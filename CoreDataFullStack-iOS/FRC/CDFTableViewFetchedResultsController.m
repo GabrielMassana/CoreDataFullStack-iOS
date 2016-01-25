@@ -1,6 +1,6 @@
 //
 //  CDFTableViewFetchedResultsController.m
-//  Hot
+//  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 22/11/15.
 //  Copyright © 2015 Gabriel Massana. All rights reserved.

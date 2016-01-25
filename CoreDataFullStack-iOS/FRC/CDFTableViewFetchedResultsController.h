@@ -1,6 +1,6 @@
 //
 //  CDFTableViewFetchedResultsController.h
-//  Hot
+//  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 22/11/15.
 //  Copyright © 2015 Gabriel Massana. All rights reserved.
@@ -49,7 +49,7 @@
 /**
  Specifies if the fetch result controller should update it's sections.
  */
-@property (nonatomic , assign) BOOL shouldUpdateSections;
+@property (nonatomic, assign) BOOL shouldUpdateSections;
 
 /**
  Animation effect on a insert row action.

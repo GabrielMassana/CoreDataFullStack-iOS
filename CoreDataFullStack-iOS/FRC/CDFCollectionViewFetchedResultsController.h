@@ -1,6 +1,6 @@
 //
 //  CDFCollectionViewFetchedResultsController.h
-//  CoreDataManager
+//  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 17/1/16.
 //  Copyright © 2016 Gabriel Massana. All rights reserved.
@@ -40,6 +40,6 @@
 /**
  Specifies if the fetch result controller should update it's sections.
  */
-@property (nonatomic , assign) BOOL shouldUpdateSections;
+@property (nonatomic, assign) BOOL shouldUpdateSections;
 
 @end

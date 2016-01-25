@@ -1,6 +1,6 @@
 //
 //  CDFCollectionViewFetchedResultsController.m
-//  CoreDataManager
+//  CoreDataFullStack
 //
 //  Created by Gabriel Massana on 17/1/16.
 //  Copyright © 2016 Gabriel Massana. All rights reserved.
