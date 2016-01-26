@@ -154,7 +154,7 @@ CoreDataFullStack-iOS is released under the MIT license. Please see the file cal
 ## Versions
 
 ```bash
-$ git tag -a 0.3.0 -m 'Version 0.3.0'
+$ git tag -a 0.4.0 -m 'Version 0.4.0'
 
 $ git push --tags
 ```
