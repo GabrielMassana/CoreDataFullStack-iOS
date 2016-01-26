@@ -24,6 +24,8 @@
 {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self deleteOldObjects];
     
     [self countObjects];
@@ -107,6 +109,5 @@
     NSLog(@"houseCount: %@", @(houseCount));
     NSLog(@"personCount: %@", @(personCount));
 }
-
 
 @end

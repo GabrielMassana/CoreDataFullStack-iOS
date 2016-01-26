@@ -10,6 +10,9 @@
 
 #import "PureLayout.h"
 #import "UIButton+BBCBackgroundColor.h"
+#import "CDFEasyTestViewController.h"
+#import "CDFTableViewViewController.h"
+#import "CDFCollectionViewViewController.h"
 
 @interface CDFSwitchViewController ()
 
@@ -114,7 +117,7 @@
                                    toSize:70.0f];
     
     [self.easyTestButton autoPinEdgeToSuperviewEdge:ALEdgeTop
-                                          withInset:40.0f];
+                                          withInset:64.0f];
     
     /*----------------*/
     
@@ -130,7 +133,6 @@
                                ofView:self.easyTestButton];
     
     /*----------------*/
-    
     
     [self.collectionButton autoPinEdgeToSuperviewEdge:ALEdgeLeft];
     
@@ -148,17 +150,20 @@
 
 - (void)easyTestButtonPressed:(UIButton *)sender
 {
-    
+    [self.navigationController pushViewController:[[CDFEasyTestViewController alloc] init]
+                                         animated:YES];
 }
 
 - (void)tableViewButtonPressed:(UIButton *)sender
 {
-    
+    [self.navigationController pushViewController:[[CDFTableViewViewController alloc] init]
+                                         animated:YES];
 }
 
 - (void)collectionButtonPressed:(UIButton *)sender
 {
-    
+    [self.navigationController pushViewController:[[CDFCollectionViewViewController alloc] init]
+                                         animated:YES];
 }
 
 @end
