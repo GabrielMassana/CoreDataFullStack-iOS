@@ -6,17 +6,17 @@
 //  Copyright © 2016 Gabriel Massana. All rights reserved.
 //
 
-#import "CDFViewController.h"
+#import "CDFSwitchViewController.h"
 
 #import "CDFHouse.h"
 #import "CDFPerson.h"
 #import "CoreDataFullStack.h"
 
-@interface CDFViewController ()
+@interface CDFSwitchViewController ()
 
 @end
 
-@implementation CDFViewController
+@implementation CDFSwitchViewController
 
 #pragma mark - ViewLifecycle
 

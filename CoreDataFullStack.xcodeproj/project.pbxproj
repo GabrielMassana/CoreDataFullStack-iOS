@@ -25,7 +25,10 @@
 		7A7AA31E1C54E2DE0046BC16 /* CDFDeletionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA31D1C54E2DE0046BC16 /* CDFDeletionService.m */; };
 		7A7AA3211C54E2ED0046BC16 /* CDFRetrievalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA3201C54E2ED0046BC16 /* CDFRetrievalService.m */; };
 		AA02532D7699A56CF2547F7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5687CACD01E91C61FEC01 /* libPods.a */; };
-		C004B61E1C57838100399B74 /* CDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B61C1C57838100399B74 /* CDFViewController.m */; };
+		C004B61E1C57838100399B74 /* CDFSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B61C1C57838100399B74 /* CDFSwitchViewController.m */; };
+		C004B6211C57844F00399B74 /* CDFEasyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6201C57844F00399B74 /* CDFEasyTestViewController.m */; };
+		C004B6241C57846500399B74 /* CDFTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6231C57846500399B74 /* CDFTableViewViewController.m */; };
+		C004B6271C57847900399B74 /* CDFCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6261C57847900399B74 /* CDFCollectionViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +76,14 @@
 		7A7AA31D1C54E2DE0046BC16 /* CDFDeletionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFDeletionService.m; sourceTree = "<group>"; };
 		7A7AA31F1C54E2ED0046BC16 /* CDFRetrievalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFRetrievalService.h; sourceTree = "<group>"; };
 		7A7AA3201C54E2ED0046BC16 /* CDFRetrievalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFRetrievalService.m; sourceTree = "<group>"; };
-		C004B61B1C57838100399B74 /* CDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFViewController.h; sourceTree = "<group>"; };
-		C004B61C1C57838100399B74 /* CDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFViewController.m; sourceTree = "<group>"; };
+		C004B61B1C57838100399B74 /* CDFSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFSwitchViewController.h; sourceTree = "<group>"; };
+		C004B61C1C57838100399B74 /* CDFSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFSwitchViewController.m; sourceTree = "<group>"; };
+		C004B61F1C57844F00399B74 /* CDFEasyTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFEasyTestViewController.h; sourceTree = "<group>"; };
+		C004B6201C57844F00399B74 /* CDFEasyTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFEasyTestViewController.m; sourceTree = "<group>"; };
+		C004B6221C57846500399B74 /* CDFTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFTableViewViewController.h; sourceTree = "<group>"; };
+		C004B6231C57846500399B74 /* CDFTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFTableViewViewController.m; sourceTree = "<group>"; };
+		C004B6251C57847900399B74 /* CDFCollectionViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFCollectionViewViewController.h; sourceTree = "<group>"; };
+		C004B6261C57847900399B74 /* CDFCollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFCollectionViewViewController.m; sourceTree = "<group>"; };
 		E6B6213498617150AF9E565F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F26260D590F72F96DD1A3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -291,6 +300,8 @@
 		C004B6181C57838100399B74 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				C004B6251C57847900399B74 /* CDFCollectionViewViewController.h */,
+				C004B6261C57847900399B74 /* CDFCollectionViewViewController.m */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -298,6 +309,8 @@
 		C004B6191C57838100399B74 /* EasyTest */ = {
 			isa = PBXGroup;
 			children = (
+				C004B61F1C57844F00399B74 /* CDFEasyTestViewController.h */,
+				C004B6201C57844F00399B74 /* CDFEasyTestViewController.m */,
 			);
 			path = EasyTest;
 			sourceTree = "<group>";
@@ -305,8 +318,8 @@
 		C004B61A1C57838100399B74 /* Switch */ = {
 			isa = PBXGroup;
 			children = (
-				C004B61B1C57838100399B74 /* CDFViewController.h */,
-				C004B61C1C57838100399B74 /* CDFViewController.m */,
+				C004B61B1C57838100399B74 /* CDFSwitchViewController.h */,
+				C004B61C1C57838100399B74 /* CDFSwitchViewController.m */,
 			);
 			path = Switch;
 			sourceTree = "<group>";
@@ -314,6 +327,8 @@
 		C004B61D1C57838100399B74 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				C004B6221C57846500399B74 /* CDFTableViewViewController.h */,
+				C004B6231C57846500399B74 /* CDFTableViewViewController.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -374,6 +389,7 @@
 		7A7AA26C1C53AE210046BC16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CDF;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gabriel Massana";
 				TargetAttributes = {
@@ -478,12 +494,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C004B6211C57844F00399B74 /* CDFEasyTestViewController.m in Sources */,
 				7A7AA2AE1C53B14C0046BC16 /* CDFCollectionViewFetchedResultsController.m in Sources */,
 				7A7AA2B01C53B14C0046BC16 /* CDFCoreDataManager.m in Sources */,
 				7A7AA3131C53D7370046BC16 /* CDFPerson.m in Sources */,
 				7A7AA3121C53D7370046BC16 /* CDFPerson+CoreDataProperties.m in Sources */,
-				C004B61E1C57838100399B74 /* CDFViewController.m in Sources */,
+				C004B61E1C57838100399B74 /* CDFSwitchViewController.m in Sources */,
+				C004B6241C57846500399B74 /* CDFTableViewViewController.m in Sources */,
 				7A7AA31E1C54E2DE0046BC16 /* CDFDeletionService.m in Sources */,
+				C004B6271C57847900399B74 /* CDFCollectionViewViewController.m in Sources */,
 				7A7AA2EE1C53CDE40046BC16 /* CDFAppDelegate.m in Sources */,
 				7A7AA3111C53D7370046BC16 /* CDFHouse.m in Sources */,
 				7A7AA2AF1C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m in Sources */,
