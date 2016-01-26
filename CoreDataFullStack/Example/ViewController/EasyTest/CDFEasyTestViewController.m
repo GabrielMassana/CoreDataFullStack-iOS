@@ -46,6 +46,10 @@
          [CDFDeletionService deleteEntriesForEntityClass:[CDFHouse class]
                                        saveAfterDeletion:YES
                                     managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         
+         [CDFDeletionService deleteEntriesForEntityClass:[CDFPerson class]
+                                       saveAfterDeletion:YES
+                                    managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
      }];
 }
 

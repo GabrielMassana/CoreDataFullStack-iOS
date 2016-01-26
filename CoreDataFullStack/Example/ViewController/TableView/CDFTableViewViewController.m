@@ -22,6 +22,8 @@
 @property (nonatomic, strong) NSArray *sortDescriptorsForFetchRequest;
 @property (nonatomic, strong) NSFetchRequest *fetchRequest;
 
+@property (nonatomic, strong) UIBarButtonItem *addButton;
+
 @end
 
 @implementation CDFTableViewViewController
@@ -35,6 +37,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.tableView];
+    self.navigationItem.rightBarButtonItem = self.addButton;;
     
     [self updateViewConstraints];
     
@@ -58,6 +61,19 @@
     return _tableView;
 }
 
+- (UIBarButtonItem *)addButton
+{
+    if (!_addButton)
+    {
+        _addButton = [[UIBarButtonItem alloc] initWithTitle:@"+"
+                                                      style:UIBarButtonItemStyleDone
+                                                     target:self
+                                                     action:@selector(addButtonPressed:)];
+    }
+    
+    return _addButton;
+}
+
 #pragma mark - Constraints
 
 - (void)updateViewConstraints
@@ -67,6 +83,30 @@
     /*----------------*/
     
     [self.tableView autoPinEdgesToSuperviewEdges];
+}
+
+#pragma mark - ButtonActions
+
+- (void)addButtonPressed:(UIBarButtonItem *)sender
+{
+    [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
+     {
+         CDFPerson *person = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFPerson class])
+                                                                inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         
+         srand((unsigned)time(0));
+         NSInteger random = rand();
+         
+         person.personID = [NSString stringWithFormat:@"%@", @(random)];
+         
+         NSArray *namesArray = @[@"David", @"Paul", @"Peter", @"Laura", @"Harry", @"Isabella", @"Gabriel", @"Marta", @"George"];
+
+         NSInteger nameIndex = random % ((namesArray.count) - 1);
+         
+         person.name = namesArray[nameIndex];
+         
+         [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext save:nil];
+     }];
 }
 
 #pragma mark - FetchResultsController
@@ -109,9 +149,7 @@
     return @[indexSort];
 }
 
-
 #pragma mark -  UITableViewDataSource
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -124,7 +162,6 @@
 {
     CDFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[CDFTableViewCell reuseIdentifier]
                                                              forIndexPath:indexPath];
-    
 
     CDFPerson *person = self.fetchedResultsController.fetchedObjects[indexPath.row];
     
@@ -137,7 +174,6 @@
     /*---------------------*/
 
     return cell;
-
 }
 
 #pragma mark - UITableViewDelegate
@@ -145,6 +181,23 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CDFPerson *person = self.fetchedResultsController.fetchedObjects[indexPath.row];
+    
+    [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
+     {
+        CDFPerson *personToDelete = [CDFRetrievalService retrieveFirstEntryForEntityClass:[CDFPerson class]
+                                                                                predicate:[NSPredicate predicateWithFormat:@"personID == %@", person.personID]
+                                                                     managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         
+         [CDFDeletionService deleteManagedObject:personToDelete
+                            managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         
+         [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext save:nil];
+     }];
 }
 
 #pragma mark - CDFTableViewFetchedResultsControllerDelegate
