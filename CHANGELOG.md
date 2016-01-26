@@ -12,13 +12,12 @@
 
 0.4.X
 
-- FRC Example
+- FRC Table View Example
 
 0.5.X
 
-- FRC with Operation and Networking Example
+- FRC Collection View with Operation and Networking Example
 
 1.0.X
 
 - First release
-
