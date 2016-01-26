@@ -25,6 +25,7 @@
 		7A7AA31B1C54E2C90046BC16 /* CDFCountService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA31A1C54E2C90046BC16 /* CDFCountService.m */; };
 		7A7AA31E1C54E2DE0046BC16 /* CDFDeletionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA31D1C54E2DE0046BC16 /* CDFDeletionService.m */; };
 		7A7AA3211C54E2ED0046BC16 /* CDFRetrievalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA3201C54E2ED0046BC16 /* CDFRetrievalService.m */; };
+		AA02532D7699A56CF2547F7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5687CACD01E91C61FEC01 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB5687CACD01E91C61FEC01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7AA2741C53AE210046BC16 /* CoreDataFullStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataFullStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7AA2781C53AE210046BC16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A7AA2811C53AE210046BC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		7A7AA31D1C54E2DE0046BC16 /* CDFDeletionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFDeletionService.m; sourceTree = "<group>"; };
 		7A7AA31F1C54E2ED0046BC16 /* CDFRetrievalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFRetrievalService.h; sourceTree = "<group>"; };
 		7A7AA3201C54E2ED0046BC16 /* CDFRetrievalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFRetrievalService.m; sourceTree = "<group>"; };
+		E6B6213498617150AF9E565F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB6F26260D590F72F96DD1A3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA02532D7699A56CF2547F7B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7220C1615E727BB87C5010BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB5687CACD01E91C61FEC01 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A7AA26B1C53AE210046BC16 = {
 			isa = PBXGroup;
 			children = (
 				7A7AA2761C53AE210046BC16 /* CoreDataFullStack */,
 				7A7AA2901C53AE220046BC16 /* CoreDataFullStackTests */,
 				7A7AA2751C53AE210046BC16 /* Products */,
+				D8B432F3CE4445C91CB837E0 /* Pods */,
+				7220C1615E727BB87C5010BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +286,15 @@
 			path = Retrieval;
 			sourceTree = "<group>";
 		};
+		D8B432F3CE4445C91CB837E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB6F26260D590F72F96DD1A3 /* Pods.debug.xcconfig */,
+				E6B6213498617150AF9E565F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,9 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A7AA2961C53AE220046BC16 /* Build configuration list for PBXNativeTarget "CoreDataFullStack" */;
 			buildPhases = (
+				3B6184F9A8AD243A843D601D /* Check Pods Manifest.lock */,
 				7A7AA2701C53AE210046BC16 /* Sources */,
 				7A7AA2711C53AE210046BC16 /* Frameworks */,
 				7A7AA2721C53AE210046BC16 /* Resources */,
+				3702E2DE30657072357F1832 /* Embed Pods Frameworks */,
+				09C3273DF6D04A6A6A29AC99 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,6 +392,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09C3273DF6D04A6A6A29AC99 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3702E2DE30657072357F1832 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B6184F9A8AD243A843D601D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A7AA2701C53AE210046BC16 /* Sources */ = {
@@ -508,6 +583,7 @@
 		};
 		7A7AA2971C53AE220046BC16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6F26260D590F72F96DD1A3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataFullStack/Info.plist;
@@ -519,6 +595,7 @@
 		};
 		7A7AA2981C53AE220046BC16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B6213498617150AF9E565F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataFullStack/Info.plist;
