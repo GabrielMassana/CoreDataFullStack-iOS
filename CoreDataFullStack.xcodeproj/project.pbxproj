@@ -29,6 +29,7 @@
 		C004B6211C57844F00399B74 /* CDFEasyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6201C57844F00399B74 /* CDFEasyTestViewController.m */; };
 		C004B6241C57846500399B74 /* CDFTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6231C57846500399B74 /* CDFTableViewViewController.m */; };
 		C004B6271C57847900399B74 /* CDFCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6261C57847900399B74 /* CDFCollectionViewViewController.m */; };
+		C004B62C1C57BBC500399B74 /* CDFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B62B1C57BBC500399B74 /* CDFTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		C004B6231C57846500399B74 /* CDFTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFTableViewViewController.m; sourceTree = "<group>"; };
 		C004B6251C57847900399B74 /* CDFCollectionViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFCollectionViewViewController.h; sourceTree = "<group>"; };
 		C004B6261C57847900399B74 /* CDFCollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFCollectionViewViewController.m; sourceTree = "<group>"; };
+		C004B62A1C57BBC500399B74 /* CDFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFTableViewCell.h; sourceTree = "<group>"; };
+		C004B62B1C57BBC500399B74 /* CDFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFTableViewCell.m; sourceTree = "<group>"; };
 		E6B6213498617150AF9E565F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F26260D590F72F96DD1A3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -329,8 +332,26 @@
 			children = (
 				C004B6221C57846500399B74 /* CDFTableViewViewController.h */,
 				C004B6231C57846500399B74 /* CDFTableViewViewController.m */,
+				C004B6281C57BBAA00399B74 /* Views */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		C004B6281C57BBAA00399B74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C004B6291C57BBAA00399B74 /* TableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C004B6291C57BBAA00399B74 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C004B62A1C57BBC500399B74 /* CDFTableViewCell.h */,
+				C004B62B1C57BBC500399B74 /* CDFTableViewCell.m */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		D8B432F3CE4445C91CB837E0 /* Pods */ = {
@@ -507,6 +528,7 @@
 				7A7AA3111C53D7370046BC16 /* CDFHouse.m in Sources */,
 				7A7AA2AF1C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m in Sources */,
 				7A7AA31B1C54E2C90046BC16 /* CDFCountService.m in Sources */,
+				C004B62C1C57BBC500399B74 /* CDFTableViewCell.m in Sources */,
 				7A7AA3101C53D7370046BC16 /* CDFHouse+CoreDataProperties.m in Sources */,
 				7A7AA2791C53AE210046BC16 /* main.m in Sources */,
 				7A7AA3211C54E2ED0046BC16 /* CDFRetrievalService.m in Sources */,
