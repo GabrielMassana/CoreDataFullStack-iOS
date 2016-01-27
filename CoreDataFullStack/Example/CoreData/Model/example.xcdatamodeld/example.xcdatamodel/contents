@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="CDFAnswer" syncable="YES">
+        <attribute name="answerID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAccepted" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
     <entity name="CDFHouse" representedClassName="CDFHouse" syncable="YES">
         <attribute name="houseID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="town" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,5 +17,6 @@
     <elements>
         <element name="CDFHouse" positionX="-45" positionY="36" width="128" height="90"/>
         <element name="CDFPerson" positionX="-36" positionY="45" width="128" height="90"/>
+        <element name="CDFAnswer" positionX="-45" positionY="72" width="128" height="75"/>
     </elements>
 </model>

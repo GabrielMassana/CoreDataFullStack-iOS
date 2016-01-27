@@ -9,6 +9,9 @@
 #import "CDFAppDelegate.h"
 
 #import "CoreDataFullStack.h"
+#import "COMOperationQueueManager.h"
+
+NSString *const kCNMNetworkingOperationQueueTypeIdentifier = @"kCNMNetworkingOperationQueueTypeIdentifier";
 
 @interface CDFAppDelegate () <CDFCoreDataManagerDelegate>
 
@@ -20,6 +23,8 @@
 {
     [CDFCoreDataManager sharedInstance].delegate = self;
     
+    [self registerOperationQueues];
+
     return YES;
 }
 
@@ -28,6 +33,25 @@
 - (NSString *)coreDataModelName
 {
     return @"example";
+}
+
+#pragma mark - OperationQueues
+
+- (void)registerOperationQueues
+{
+    //Network UI
+    
+    //Network Background
+    NSOperationQueue *networkDataOperationQueue = [[NSOperationQueue alloc] init];
+    networkDataOperationQueue.qualityOfService = NSQualityOfServiceBackground;
+    networkDataOperationQueue.maxConcurrentOperationCount = NSOperationQueueDefaultMaxConcurrentOperationCount;
+    
+    [[COMOperationQueueManager sharedInstance] registerOperationQueue:networkDataOperationQueue
+                                             operationQueueIdentifier:kCNMNetworkingOperationQueueTypeIdentifier];
+    
+    //Media Download
+    
+    //Core Data Update
 }
 
 @end

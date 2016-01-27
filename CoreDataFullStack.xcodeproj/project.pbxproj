@@ -24,6 +24,8 @@
 		7A7AA31B1C54E2C90046BC16 /* CDFCountService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA31A1C54E2C90046BC16 /* CDFCountService.m */; };
 		7A7AA31E1C54E2DE0046BC16 /* CDFDeletionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA31D1C54E2DE0046BC16 /* CDFDeletionService.m */; };
 		7A7AA3211C54E2ED0046BC16 /* CDFRetrievalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AA3201C54E2ED0046BC16 /* CDFRetrievalService.m */; };
+		7AF4DDC01C58CBD4001C0BC9 /* CDFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4DDBF1C58CBD4001C0BC9 /* CDFParser.m */; };
+		7AF4DDC81C58CCAD001C0BC9 /* CDFAnswersOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4DDC71C58CCAD001C0BC9 /* CDFAnswersOperation.m */; };
 		AA02532D7699A56CF2547F7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5687CACD01E91C61FEC01 /* libPods.a */; };
 		C004B61E1C57838100399B74 /* CDFSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B61C1C57838100399B74 /* CDFSwitchViewController.m */; };
 		C004B6211C57844F00399B74 /* CDFEasyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C004B6201C57844F00399B74 /* CDFEasyTestViewController.m */; };
@@ -77,6 +79,10 @@
 		7A7AA31D1C54E2DE0046BC16 /* CDFDeletionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFDeletionService.m; sourceTree = "<group>"; };
 		7A7AA31F1C54E2ED0046BC16 /* CDFRetrievalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFRetrievalService.h; sourceTree = "<group>"; };
 		7A7AA3201C54E2ED0046BC16 /* CDFRetrievalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFRetrievalService.m; sourceTree = "<group>"; };
+		7AF4DDBE1C58CBD4001C0BC9 /* CDFParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFParser.h; sourceTree = "<group>"; };
+		7AF4DDBF1C58CBD4001C0BC9 /* CDFParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFParser.m; sourceTree = "<group>"; };
+		7AF4DDC61C58CCAD001C0BC9 /* CDFAnswersOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFAnswersOperation.h; sourceTree = "<group>"; };
+		7AF4DDC71C58CCAD001C0BC9 /* CDFAnswersOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAnswersOperation.m; sourceTree = "<group>"; };
 		C004B61B1C57838100399B74 /* CDFSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFSwitchViewController.h; sourceTree = "<group>"; };
 		C004B61C1C57838100399B74 /* CDFSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFSwitchViewController.m; sourceTree = "<group>"; };
 		C004B61F1C57844F00399B74 /* CDFEasyTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFEasyTestViewController.h; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 			children = (
 				7A7AA2E81C53CDE40046BC16 /* AppDelegate */,
 				7A7AA2E21C53CC1C0046BC16 /* CoreData */,
+				7AF4DDC11C58CC77001C0BC9 /* Networking */,
+				7AF4DDBD1C58CBB9001C0BC9 /* Parser */,
 				7A7AA2EB1C53CDE40046BC16 /* ViewController */,
 			);
 			path = Example;
@@ -300,11 +308,69 @@
 			path = Retrieval;
 			sourceTree = "<group>";
 		};
+		7AF4DDB91C58C68B001C0BC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AF4DDBD1C58CBB9001C0BC9 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				7AF4DDBE1C58CBD4001C0BC9 /* CDFParser.h */,
+				7AF4DDBF1C58CBD4001C0BC9 /* CDFParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		7AF4DDC11C58CC77001C0BC9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7AF4DDC21C58CC77001C0BC9 /* APIs */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7AF4DDC21C58CC77001C0BC9 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				7AF4DDC31C58CC77001C0BC9 /* Answers */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		7AF4DDC31C58CC77001C0BC9 /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				7AF4DDC41C58CC77001C0BC9 /* Operations */,
+				7AF4DDC51C58CC77001C0BC9 /* Parsers */,
+			);
+			path = Answers;
+			sourceTree = "<group>";
+		};
+		7AF4DDC41C58CC77001C0BC9 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				7AF4DDC61C58CCAD001C0BC9 /* CDFAnswersOperation.h */,
+				7AF4DDC71C58CCAD001C0BC9 /* CDFAnswersOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		7AF4DDC51C58CC77001C0BC9 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
 		C004B6181C57838100399B74 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				C004B6251C57847900399B74 /* CDFCollectionViewViewController.h */,
 				C004B6261C57847900399B74 /* CDFCollectionViewViewController.m */,
+				7AF4DDB91C58C68B001C0BC9 /* Views */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -528,8 +594,10 @@
 				7A7AA3111C53D7370046BC16 /* CDFHouse.m in Sources */,
 				7A7AA2AF1C53B14C0046BC16 /* CDFTableViewFetchedResultsController.m in Sources */,
 				7A7AA31B1C54E2C90046BC16 /* CDFCountService.m in Sources */,
+				7AF4DDC81C58CCAD001C0BC9 /* CDFAnswersOperation.m in Sources */,
 				C004B62C1C57BBC500399B74 /* CDFTableViewCell.m in Sources */,
 				7A7AA3101C53D7370046BC16 /* CDFHouse+CoreDataProperties.m in Sources */,
+				7AF4DDC01C58CBD4001C0BC9 /* CDFParser.m in Sources */,
 				7A7AA2791C53AE210046BC16 /* main.m in Sources */,
 				7A7AA3211C54E2ED0046BC16 /* CDFRetrievalService.m in Sources */,
 				7A7AA2E71C53CC540046BC16 /* example.xcdatamodeld in Sources */,
