@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
-    <entity name="CDFAnswer" syncable="YES">
+    <entity name="CDFAnswer" representedClassName="CDFAnswer" syncable="YES">
         <attribute name="answerID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isAccepted" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>

@@ -8,11 +8,7 @@
 
 #import "CDFCollectionViewViewController.h"
 
-#import "CNMSession.h"
-#import "CNMRequest.h"
-#import "CNMURLSessionDataTask.h"
-#import "CDFAnswersOperation.h"
-#import "CDFAppDelegate.h"
+#import "CDFAnswersAPIManager.h"
 
 @interface CDFCollectionViewViewController ()
 
@@ -26,18 +22,11 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    CDFAnswersOperation *operation = [[CDFAnswersOperation alloc] init];
-    operation.operationQueueIdentifier = kCNMNetworkingOperationQueueTypeIdentifier;
-    
-    operation.onSuccess = ^(id result)
+    [CDFAnswersAPIManager downloadAnswersFromStackoverflowWithSuccess:^(id result)
     {
         NSLog(@"result %@", result);
-        NSLog(@"isMainThread %d", [NSThread currentThread].isMainThread);
-    };
-    
-    [[COMOperationQueueManager sharedInstance] addOperation:operation];
-    
-
+    }
+                                                              failure:nil];
     
 }
 

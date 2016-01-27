@@ -11,6 +11,8 @@
 #import "CNMSession.h"
 #import "CNMRequest.h"
 #import "CNMURLSessionDataTask.h"
+#import "CDFAnswerParser.h"
+#import "CDFCoreDataManager.h"
 
 @implementation CDFAnswersOperation
 
@@ -48,23 +50,26 @@
                                                                  options: NSJSONReadingMutableContainers
                                                                    error: nil];
             
-            //Parse data here
-            
-            NSLog(@"isMainThread %d", [NSThread currentThread].isMainThread);
+            [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
+            {
+                //Parse data
+                CDFAnswerParser *parser = [[CDFAnswerParser alloc] init];
+                
+                [parser parseAnswers:[json objectForKey:@"items"]];
+                
+                NSArray *items = [json objectForKey:@"items"];
+                
+                NSLog(@"item %@", items[0]);
+                
+                [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext save:nil];
+            }];
             
             //Completion
-            NSLog(@"result %@", json);
-            NSLog(@"result %@", [json objectForKey:@"items"]);
-            
-            NSArray *items = [json objectForKey:@"items"];
-            
-            NSLog(@"item %@", items[0]);
-            
-            [self didSucceedWithResult:items[1]];
+            [self didSucceedWithResult:nil];
         }
         else
         {
-            NSLog(@"error %@", error);
+            [self didFailWithError:error];
         }
     };
     
