@@ -37,7 +37,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.tableView];
-    self.navigationItem.rightBarButtonItem = self.addButton;;
+    self.navigationItem.rightBarButtonItem = self.addButton;
     
     [self updateViewConstraints];
     
