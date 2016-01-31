@@ -50,22 +50,20 @@
                                                                  options: NSJSONReadingMutableContainers
                                                                    error: nil];
             
+            __block NSArray *answers = nil;
+            
             [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
             {
                 //Parse data
                 CDFAnswerParser *parser = [[CDFAnswerParser alloc] init];
                 
-                [parser parseAnswers:[json objectForKey:@"items"]];
-                
-                NSArray *items = [json objectForKey:@"items"];
-                
-                NSLog(@"item %@", items[0]);
+                answers = [parser parseAnswers:[json objectForKey:@"items"]];
                 
                 [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext save:nil];
             }];
             
             //Completion
-            [self didSucceedWithResult:nil];
+            [self didSucceedWithResult:answers];
         }
         else
         {

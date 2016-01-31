@@ -9,19 +9,49 @@
 #import "CDFAnswerParser.h"
 
 #import "CDFAnswer.h"
+#import "CDFRetrievalService.h"
+#import "CDFCoreDataManager.h"
 
 @implementation CDFAnswerParser
 
-- (NSArray *)parseAnswers:(NSDictionary *)answersDictionary
+- (NSArray *)parseAnswers:(NSArray *)answersArray
 {
+    NSMutableArray *array = [NSMutableArray new];
     
-    return nil;
+    for (NSInteger index = 0; index < answersArray.count; index++)
+    {
+        CDFAnswer *answer = [self parseAnswer:answersArray[index]];
+        
+        if (answer)
+        {
+            [array addObject:answer];
+        }
+    }
+    
+    return array;
 }
 
 - (CDFAnswer *)parseAnswer:(NSDictionary *)answerItem
 {
+    NSNumber *answerID = [answerItem objectForKey:@"answer_id"];
+    NSString *answerIDString = [NSString stringWithFormat:@"%@", answerID];
     
-    return nil;
+    CDFAnswer *answer = nil;
+    answer = [CDFRetrievalService retrieveFirstEntryForEntityClass:[CDFAnswer class]
+                                                         predicate:[NSPredicate predicateWithFormat:@"answerID == %@", answerIDString]
+                                              managedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+    
+    if (!answer)
+    {
+        answer = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFAnswer class])
+                                               inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+        
+        answer.answerID = answerIDString;
+    }
+    
+    answer.isAccepted = [answerItem objectForKey:@"is_accepted"];
+    
+    return answer;
 }
 
 @end

@@ -10,6 +10,6 @@
 
 @interface CDFAnswerParser : CDFParser
 
-- (NSArray *)parseAnswers:(NSDictionary *)answersDictionary;
+- (NSArray *)parseAnswers:(NSArray *)answersArray;
 
 @end

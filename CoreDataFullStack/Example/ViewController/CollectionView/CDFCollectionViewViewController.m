@@ -24,10 +24,9 @@
     
     [CDFAnswersAPIManager downloadAnswersFromStackoverflowWithSuccess:^(id result)
     {
-        NSLog(@"result %@", result);
+        NSLog(@"result %@", @(((NSArray *)result).count));
     }
                                                               failure:nil];
-    
 }
 
 @end
