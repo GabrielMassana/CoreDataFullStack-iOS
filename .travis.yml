@@ -1,0 +1,4 @@
+language: objective-c
+   
+script: 
+   xctool -workspace CoreDataFullStack.xcworkspace -scheme CoreDataFullStack build -sdk iphonesimulator
