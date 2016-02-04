@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/CoreDataFullStack.svg?style=flat-square)](http://cocoapods.org/pods/CoreDataFullStack)
 [![Platform](https://img.shields.io/cocoapods/p/CoreDataFullStack.svg?style=flat-square)](http://cocoapods.org/pods/CoreDataFullStack)
 [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/CoreDataFullStack.svg?style=flat-square)](http://cocoapods.org/pods/CoreDataFullStack)
+[![Build Status](https://img.shields.io/travis/GabrielMassana/CoreDataFullStack-iOS/master.svg?style=flat-square)](https://travis-ci.org/GabrielMassana/CoreDataFullStack-iOS)
 
 ##   What is it?
 
