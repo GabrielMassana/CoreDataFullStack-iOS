@@ -208,9 +208,14 @@ static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
 
 - (void)saveManagedObjectContext
 {
+    [self saveManagedObjectContext:self.managedObjectContext];
+}
+
+- (void)saveManagedObjectContext:(NSManagedObjectContext *)context
+{
     NSError *error = nil;
     
-    if (![self.managedObjectContext save:&error])
+    if (![context save:&error])
     {
         NSLog(@"Couldn't save context: %@", [error userInfo]);
     }
@@ -218,7 +223,7 @@ static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
     {
         //Force context to process pending changes as
         //cascading deletes may not be immediatly applied by coredata.
-        [self.managedObjectContext processPendingChanges];
+        [context processPendingChanges];
     }
 }
 

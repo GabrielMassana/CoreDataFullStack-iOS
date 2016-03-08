@@ -56,4 +56,11 @@
  */
 - (void)saveManagedObjectContext;
 
+/**
+ Saves the given managedObjectContext.
+ 
+ @param context - the context to be saved.
+ */
+- (void)saveManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
