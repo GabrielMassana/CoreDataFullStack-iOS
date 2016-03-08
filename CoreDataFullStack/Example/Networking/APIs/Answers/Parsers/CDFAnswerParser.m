@@ -10,6 +10,7 @@
 
 #import "CDFAnswer.h"
 #import "CDFRetrievalService.h"
+#import "CDFInsertService.h"
 #import "CDFCoreDataManager.h"
 
 @implementation CDFAnswerParser
@@ -43,8 +44,8 @@
     
     if (!answer)
     {
-        answer = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFAnswer class])
-                                               inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+        answer = [CDFInsertService insertNewObjectForEntityClass:[CDFAnswer class]
+                                          inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
         
         answer.answerID = answerIDString;
     }

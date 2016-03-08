@@ -15,5 +15,6 @@
     #import "CDFCountService.h"
     #import "CDFDeletionService.h"
     #import "CDFRetrievalService.h"
+    #import "CDFInsertService.h"
 
 #endif

@@ -11,6 +11,7 @@
 #import "CDFHouse.h"
 #import "CDFPerson.h"
 #import "CoreDataFullStack.h"
+#import "CDFInsertService.h"
 
 @interface CDFEasyTestViewController ()
 
@@ -59,21 +60,21 @@
 {
     [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
      {
-         CDFHouse *firstHouse = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFHouse class])
-                                                              inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         CDFHouse *firstHouse = [CDFInsertService insertNewObjectForEntityClass:[CDFHouse class]
+                                                         inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
          
          firstHouse.houseID = @"0";
          firstHouse.town = @"London";
          
-         CDFPerson *firstPerson = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFPerson class])
-                                                                inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         CDFPerson *firstPerson = [CDFInsertService insertNewObjectForEntityClass:[CDFPerson class]
+                                                           inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
          
          firstPerson.personID = @"0";
          firstPerson.name = @"John";
          firstPerson.house = firstHouse;
          
-         CDFPerson *secondPerson = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFPerson class])
-                                                                 inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         CDFPerson *secondPerson = [CDFInsertService insertNewObjectForEntityClass:[CDFPerson class]
+                                                            inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
          
          secondPerson.personID = @"1";
          secondPerson.name = @"Marie";

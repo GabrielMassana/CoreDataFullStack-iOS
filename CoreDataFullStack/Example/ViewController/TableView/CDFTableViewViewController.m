@@ -91,8 +91,8 @@
 {
     [[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext performBlockAndWait:^
      {
-         CDFPerson *person = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([CDFPerson class])
-                                                                inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
+         CDFPerson *person = [CDFInsertService insertNewObjectForEntityClass:[CDFPerson class]
+                                                      inManagedObjectContext:[CDFCoreDataManager sharedInstance].backgroundManagedObjectContext];
          
          srand((unsigned)time(0));
          NSInteger random = rand();
