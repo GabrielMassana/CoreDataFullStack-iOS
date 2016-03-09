@@ -13,6 +13,7 @@
 0.4.X
 
 - FRC Table View Example
+- Insert
 
 0.5.X
 
