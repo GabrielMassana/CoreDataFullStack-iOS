@@ -14,6 +14,7 @@
 
 - FRC Table View Example
 - Insert
+- Reset Core Data Stack method
 
 0.5.X
 

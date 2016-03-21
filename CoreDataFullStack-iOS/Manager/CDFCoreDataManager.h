@@ -63,4 +63,9 @@
  */
 - (void)saveManagedObjectContext:(NSManagedObjectContext *)context;
 
+/**
+ Destroys all data from core data, tears down the stack and builds it up again.
+ */
+- (void)reset;
+
 @end

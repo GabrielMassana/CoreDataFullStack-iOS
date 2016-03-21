@@ -18,7 +18,14 @@ static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
  */
 @property (nonatomic, strong) NSURL *modelURL;
 
+/**
+  ManagedObjectContext that is used as the default managedObjectContext
+ */
 @property (nonatomic, strong, readwrite) NSManagedObjectContext *managedObjectContext;
+
+/**
+ ManagedObjectContext used to background threads.
+ */
 @property (nonatomic, strong, readwrite) NSManagedObjectContext *backgroundManagedObjectContext;
 
 /**
@@ -40,6 +47,11 @@ static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
  Disk store URL.
  */
 @property (nonatomic, strong, readonly) NSURL *storeURL;
+
+/**
+ Destroys all data from core data and tears down the stack.
+ */
+- (void)clear;
 
 @end
 
@@ -225,6 +237,26 @@ static NSString *const CDFPersistentStoreFileExtension = @"sqlite";
         //cascading deletes may not be immediatly applied by coredata.
         [context processPendingChanges];
     }
+}
+
+#pragma mark - Reset
+
+- (void)reset
+{
+    [self clear];
+}
+
+#pragma mark - Clear
+
+- (void)clear
+{
+    self.backgroundManagedObjectContext = nil;
+    self.managedObjectContext = nil;
+    
+    self.persistentStoreCoordinator = nil;
+    self.managedObjectModel = nil;
+    
+    [self deletePersistentStore];
 }
 
 @end
